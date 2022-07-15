@@ -1,0 +1,446 @@
+@font-face {
+    font-family: "raleway";
+    src: url(../font/static/Raleway-Light.ttf);
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "raleway";
+    background-color: rgb(245, 245, 245);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+#headerImg {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/mac.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: white;
+}
+
+#headerText {
+    width: 80%;
+    margin: 7rem auto 0 auto;
+}
+
+#headerText p {
+    padding: 1.5rem 0;
+}
+
+#headerText button {
+    width: 80%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.699);
+    border: none;
+    margin-bottom: 3rem;
+}
+
+#socialMedia {
+    color: rgba(255, 255, 255, 0.699);
+    margin: 0 0.5rem;
+}
+
+/* section about
+ */
+
+#about {
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+     margin: 0 auto;
+     padding: 5rem 0;
+     text-align: center;
+ }
+
+#pAbout {
+    margin-bottom: 2rem;
+}
+
+.brand {
+    margin: 2rem 0 0 0;
+}
+
+.iconAbout {
+    font-size: 4rem;
+}
+
+.brand h3 {
+    margin: 2rem 0;
+}
+
+/* section design */
+
+#design {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(224, 224, 224);
+}
+
+#design div:first-child {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#design h3 {
+    margin: 7rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+#design p {
+    margin: 2rem 0;
+}
+
+#design button {
+    width: 60%;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+}
+
+#design i {
+    margin: 0 0.5rem;
+}
+
+#designImg {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#designImg img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+/* section team */
+
+#team {
+    text-align: center;
+    padding: 5rem 0 6rem 0;
+}
+
+#allCards {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+.card {display: none;
+    background-color: white;
+    margin: 0.5rem 0;
+    text-align: left;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.active{display: block;}
+
+.card img {
+    width: 100%;
+    padding: 0;
+    filter: grayscale(70%);
+}
+
+.card button {
+    width: 90%;
+    height: 5vh;
+    border: none;
+    font-size: 1rem;
+}
+
+.card h3, .card p, .card button {
+    margin: 1rem;
+}
+
+/* section stats */
+
+#stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    background-color: rgb(94, 94, 94);
+    color: white;
+}
+
+#stats div {
+    margin: 0.5rem 0;
+}
+
+#stats h3 {
+    margin: 0.8rem 0;
+    font-size: 2rem;
+}
+
+/* section ourWorks */
+
+#ourWorks {
+    width: 100%;
+    padding: 10rem 0 5rem 0;
+    text-align: center;
+}
+
+#worksImg {
+    width: 85%;
+    margin: 4rem auto;
+}
+
+#worksImg img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/* section Our Skills */
+
+#ourSkills {
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+    padding: 5rem 0;
+}
+
+#skillsText {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#skillsText p:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.skills i {
+    margin: 0 2rem 0 0;
+}
+
+.progress {
+    width: 100%;
+    height: 1.5rem;
+    background-color: rgb(189, 189, 189);
+    text-align: center;
+    color: white;
+}
+
+#progressBar, #progressBar2, #progressBar3 {
+    height: 100%;
+    width: 0%;
+    background-color: rgb(94, 94, 94);
+}
+
+#progressBar {
+    animation: fill-bar 3s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 90%;}
+}
+
+#progressBar2 {
+    animation: fill-bar2 3s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fill-bar2 {
+    from {width: 0%;}
+    to {width: 85%;}
+}
+
+#progressBar3 {
+    animation: fill-bar3 3s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fill-bar3 {
+    from {width: 0%;}
+    to {width: 75%;}
+}
+
+/*  pour carrousel */
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 20px 5px;
+    color: 'arrow';
+    font-size: 2rem;
+  }
+
+ 
+  
+  button span {
+    position: relative;
+    display: inline-block;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .previous:hover span {
+    transform: translateX(-10px) scale(1.2);
+  }
+  
+  .next:hover span {
+    transform: translateX(10px) scale(1.2);
+  }
+  
+  .slider-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slider-nav li {
+    display: flex;
+    flex: 2;
+    text-align: center;
+  }
+
+
+
+.slider-nav .arrow {
+    flex: 0 0 15%;
+  }
+  
+  .slider-nav a {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider-nav span {
+    display: block;
+    width: 100%;
+  }
+
+  #price{
+    background-color:#5E5E5E ;
+    /*  min-height: 300px;  */
+    display:flex;
+    justify-content: center;
+    text-align: center; 
+  }
+
+  #prices{
+    padding-top: 5rem;
+    color:white
+    
+  }
+
+  #prices h2{
+    font-weight: 300;
+  }
+
+  #prices p{
+    padding: 1rem 0;
+  }
+
+  #allPrice{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service{ 
+    min-width:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+    color:#5E5E5E;
+    margin: 1rem;
+   }
+
+   .service span{
+
+    font-weight: bold;
+   }
+
+   .service div {
+    width: 100%;
+    min-height: 50px;
+
+    border-bottom: 1px rgb(243, 243, 243) solid;
+    
+    
+   }
+
+   .titre{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+   }
+
+   .PRO>.titre{ background-color: red;}
+
+   .signup {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-height: 2rem;
+     background-color: #EEEEEE;
+   }
+
+
+
+
+
+    .service button{
+        padding: 5px;
+        font-size: 1rem;
+        background-color: black;
+        color: white;   
+    }
+
+/* section contact */
+
+.contacts{
+
+    padding-top: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #EEEEEE;
+
+}
+
+
+
+
+
+
