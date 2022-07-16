@@ -440,19 +440,97 @@ button {
     width: 100% ;
     padding-top: 100px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.
+
 
 .link {
+    display:flex;
+    justify-content: left;
+    padding: 1rem;
+    margin-left: 0.9rem;
     width: 100%;
-    min-height: 1rem
+    
+}
+form{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form input{
+   
+    margin: 0.9rem;
+
+}
+form textarea{
+    
+    margin: 0.9rem;
 }
 
-.
+form button{
+    margin:0.9rem;
+    width: 50%;
+    border: 1px red solid;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: small;
+}
+ .googlemap{
+    min-width: 90%;
+    /* background: green; */
+    
+    background-image: url("../img/map.jpg");
+    min-height: 200Px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
 
+/*  dans le  footer */
+.runtop{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+
+    
+    background-color: black;
+    
+
+}
+.runtop a{
+    padding: 1rem 1rem;
+    text-decoration: none;
+    background-color: white;
+    color:black;
+    font-weight: bold;
+}
+
+.social {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.social i{
+    padding: 0.5rem;
+}
+
+.power{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    font-size: small;
+    font-weight: bold;
+}
 
 
 
